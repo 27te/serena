@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="mt-40 flex min-h-screen">
+  <section class="mt-40 flex">
     <div>
       <div>
         <span
@@ -39,6 +39,63 @@ import Layout from "../layouts/Layout.astro";
       class="w-1/2 bg-septenary/10 shadow-md h-96 rounded-lg flex justify-center items-center text-xl text-septenary"
     >
       image header
+    </div>
+  </section>
+  <section class="my-40">
+    <h2 class="text-5xl font-bricolage font-bold mt-20 text-center">
+      Get in touch
+    </h2>
+    <div class="mt-20">
+      <form class="flex gap-5 flex-col justify-center items-center">
+        <div class="flex w-full gap-5">
+          <div class="flex flex-col w-full">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              placeholder="Luis Andres"
+              class="border focus:border-senary border-senary/30 rounded-lg px-4 py-3 outline-none"
+            />
+          </div>
+          <div class="flex flex-col w-full">
+            <label for="email">Email Address</label>
+            <input
+              type="text"
+              placeholder="luis@example.com"
+              class="border focus:border-senary border-senary/30 rounded-lg px-4 py-3 outline-none"
+            />
+          </div>
+        </div>
+        <div class="flex w-full gap-5">
+          <div class="flex flex-col w-full">
+            <label for="number">Phone Number</label>
+            <input
+              type="text"
+              placeholder="986-754-273"
+              class="border focus:border-senary border-senary/30 rounded-lg px-4 py-3 outline-none"
+            />
+          </div>
+          <div class="flex flex-col w-full">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              placeholder="Appointment Request"
+              class="border focus:border-senary border-senary/30 rounded-lg px-4 py-3 outline-none"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="message">Message</label>
+          <textarea
+            placeholder="How can we help you?"
+            class="border focus:border-senary border-senary/30 rounded-lg px-4 py-3 outline-none w-full"
+          ></textarea>
+        </div>
+        <button
+          class="bg-quinary px-8 py-4 rounded-lg cursor-pointer shadow hover:scale-105 transition-transform duration-150 text-secondary"
+          >Book Appointment</button
+        >
+      </form>
     </div>
   </section>
 </Layout>
