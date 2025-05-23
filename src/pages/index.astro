@@ -1,16 +1,44 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <section class="mt-40 flex min-h-screen">
+    <div>
+      <div>
+        <span
+          class="bg-tertiary text-secondary font-medium text-sm p-2 rounded-full"
+          >Welcome to CareCrest Medical Clinic</span
+        >
+        <h1 class="font-bricolage font-bold text-8xl my-4">
+          Caring for you with <span class="text-tertiary">precision</span> and <span
+            class="text-tertiary">heart</span
+          >
+        </h1>
+      </div>
+      <div>
+        <p class="text-base">
+          At CareCrest, we combine medical expertise with compassionate care to
+          provide you and your family with the best healthcare services.
+        </p>
+      </div>
+      <div class="flex gap-5 mt-8">
+        <button
+          class="text-medium text-base bg-tertiary text-secondary px-8 py-4 rounded-lg hover:scale-105 transition-transform duration-150 cursor-pointer"
+        >
+          Book an Appointment
+        </button>
+        <button
+          class="text-medium text-base bg-quinary text-secondary px-8 py-4 rounded-lg hover:scale-105 transition-transform duration-150 cursor-pointer"
+        >
+          Meet our Doctors
+        </button>
+      </div>
+    </div>
+    <div
+      class="w-1/2 bg-septenary/10 shadow-md h-96 rounded-lg flex justify-center items-center text-xl text-septenary"
+    >
+      image header
+    </div>
+  </section>
+</Layout>
