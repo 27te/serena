@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: Inter;
+  font-weight: 200 900;
+  src: url('../assets/fonts/inter.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: Bricolage;
+  font-weight: 200 900;
+  src: url('../assets/fonts/BricolageGrotesque.ttf') format('truetype');
+}
+
+
+@theme{
+  --font-sans: Inter, sans-serif;
+  --font-bricolage: Bricolage, sans-serif;
+  --color-primary:#FAF9F6;
+  --color-secondary:#F5F2EB;
+  --color-tertiary:#4CAEA9;
+  --color-quaternary:#EADBC8;
+  --color-quinary:#333333;
+  --color-senary:#66605C;
+  --color-septenary:#A6C7A3;
+}
+
+
+
+
+/* Background	Cream White		Soft, non-intrusive backdrop
+Surface/Section	Eggshell	#F5F2EB	Slightly darker cream for section contrast
+Primary	Soft Teal	#4CAEA9	Trustworthy medical tone (calls-to-action)
+Accent	Blush Beige	#EADBC8	Elegant warmth, good for highlights/buttons
+Typography	Charcoal Grey	#333333	High contrast, clean and readable
+Secondary Text	Muted Taupe	#66605C	Softer text (subtitles, descriptions)
+Success (opt)	Aloe Green	#A6C7A3	For messages or indicators */
